@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GALA</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" href="img/logo.png"  type="image/x-icon" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <div class="scroll">
+      <div class="progress-container">
+        <div class="progress-bar" id="headerBar"></div>
+      </div>
+    </div>
+    <!-- nav -->
+    <header class="header flex-row">
+      <div class="header_content flex-row align-items-center">
+      <nav class="navbar navbar-expand-lg navigation-wrap">
+          <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" style="width: 90px; margin-left: 20px;" alt=""> 
+          </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria- expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#index">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#index">Service</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="wed.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Event
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="wed.html">Wedding Events</a></li>
+                    <li><a class="dropdown-item" href="soc.html">Social Events</a></li>
+                    <li><a class="dropdown-item" href="cor.html">Corporate Events</a></li>                   
+                    <li><a class="dropdown-item" href="non.html">Non-Profit Events</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        </div>
+  </header>
+        <!-- nav -->
+ <!-- carousel start -->
+ <div id="carouselExampleCaptions"  class="carousel slide" id="home">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/d2.png" class="d-block" alt="BRIDGES" />
+      <div  class="carousel-caption">
+        <h5>Let's Plan Your <br> <span class="multiple"></span></h5>
+        <p>We love the creative solution. We live for unexpected design, unique experiences, and seamless production.
+          Planning an event but no idea where to start? <span> Take Gala!</span></p>
+      <a href="contact.html"  class="main-btn"> Contact Us </a>
+      <div id="service"></div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/co4.jpg" class="d-block" alt="BRIDGES" />
+    </div>
+    <div class="carousel-item">
+      <img src="img/pexel1.jpeg" class="d-block" alt="BRIDGES" />
+    </div>
+    <div class="carousel-item">
+      <img src="img/w2.jpg" class="d-block" alt="BRIDGES" />
+     </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselExampleCaptions"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExampleCaptions"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- section1 end-->
+<!-- section2 start-->
+<section>
+    <div class="service">
+        <div class="container">
+            <div class="service-title text-center">
+                <h1>Our Service</h1>
+                <h5 >Planning an event but no idea where to start? Contact Gala!
+                </h5>
+                <p class="text-center mx-auto">A wedding is, more than anything, a shining memory. It's a production, with the bride and groom playing the main characters, while everyone else plays a supporting role.</p>
+                <p class="text-center mx-auto">We have you covered. Take Gala Events partners with local vendors to create fun, unique and innovative events tailored just for you or your organization. We have a variety of event planning experience; including weddings, social, corporate and non-profit events.</p>
+            </div>
+        </div>
+    </div>
+    <section class="counter-section">
+        <div class="container">
+          <h3 class="text-center my-5" data-aos="zoom-in">Number of Successfull events</h3>
+          <div class="row text-center">
+            <div  class="col-md-6 col-lg-3 col-sm-12 mb-lg-0 mb-md-0 mb-5 count">
+              <h2>
+                <span id="count1"></span> <i class="fa-solid fa-user-tie"></i>
+              </h2>
+              <p>Corporate Events</p>
+              <div class="ul-list">
+              <ul>
+                <li data-aos="zoom-in-right" ><span style="margin-right: 8px;">|</span> Product Launches</li>
+                <li data-aos="zoom-in-right" ><span style="margin-right: 8px;">|</span> Conferences</li>
+                <li data-aos="zoom-in-right" ><span style="margin-right: 8px;">|</span> Sales Events</li>
+                <li data-aos="zoom-in-right" ><span style="margin-right: 8px;">|</span> Trade Events</li>
+                <li data-aos="zoom-in-right" ><span style="margin-right: 8px;">|</span> Customer</li>
+                <li data-aos="zoom-in-right" ><span style="margin-right: 8px;">|</span> Appreiation Parties</li>
+                <li data-aos="zoom-in-right" ><span style="margin-right: 8px;">|</span> Team Building</li>
+                <li data-aos="zoom-in-right" ><span style="margin-right: 8px;">|</span> Workshops</li>
+                <li data-aos="zoom-in-right" ><span style="margin-right: 8px;">|</span> More!</li>
+              </ul>
+            </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-sm-12 mb-lg-0 mb-md-0 mb-5 count">
+              <h2>
+                <span id="count2"></span> <i class="fa-regular fa-heart"></i>
+              </h2>
+              <p>Non-Profit Events</p>
+              <div class="ul-list">
+                <ul>
+                  <li data-aos="zoom-in-right"><span  style="margin-right: 8px;">|</span> Galas</li>
+                  <li data-aos="zoom-in-right"><span  style="margin-right: 8px;">|</span> Luncheons</li>
+                  <li data-aos="zoom-in-right"><span  style="margin-right: 8px;">|</span> Award Dinners</li>
+                  <li data-aos="zoom-in-right"><span  style="margin-right: 8px;">|</span> Walk & Run</li>
+                  <li data-aos="zoom-in-right"><span  style="margin-right: 8px;">|</span> unique Fundrasers</li>
+                  <li data-aos="zoom-in-right"><span  style="margin-right: 8px;">|</span> Fairs, Festivals</li>
+                  <li data-aos="zoom-in-right"><span  style="margin-right: 8px;">|</span> Expos</li>
+                  <li data-aos="zoom-in-right"><span  style="margin-right: 8px;">|</span> More!</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-sm-12 mb-lg-0 mb-md-0 mb-5 count">
+              <h2>
+                <span id="count3"></span> <i class="fa-solid fa-wine-glass"></i>
+              </h2>
+              <p class="soc" style="width: 210px;">Social Events</p>
+              <div class="ul-list left">
+                <ul class="list-unstyled">
+                  <li data-aos="zoom-in-right"><span  style="margin-right: 8px;">|</span> Birthday Parties</li>
+                  <li data-aos="zoom-in-right"><span  style="margin-right: 8px;">|</span> Seasonal Celebration</li>
+                  <li data-aos="zoom-in-right"><span  style="margin-right: 8px;">|</span> Anniversary Parties</li>
+                  <li data-aos="zoom-in-right"><span  style="margin-right: 8px;">|</span> Going Away Parties</li>
+                  <li data-aos="zoom-in-right"><span  style="margin-right: 8px;">|</span> Girls & Boys Night-out</li>
+                  <li data-aos="zoom-in-right"><span  style="margin-right: 8px;">|</span> Retiement Parties</li>
+                  <li data-aos="zoom-in-right"><span  style="margin-right: 8px;">|</span> More!</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-sm-12 mb-lg-0 mb-md-0 mb-5 count">
+              <h2>
+                <span id="count4"></span> <i class="fa-regular fa-gem"></i>
+              </h2>
+              <p class="wed" style=" margin-left: 2em;">Wedding Events</p>
+              <div class="ul-list">
+                <ul>
+                  <li data-aos="zoom-in-right"><span  style="  margin-right: 8px;">|</span> Ceremonies</li>
+                  <li data-aos="zoom-in-right"> <span  style=" margin-right: 8px;">|</span>  Receptions</li>
+                  <li data-aos="zoom-in-right"> <span  style=" margin-right: 8px;">|</span>  Engagement Parties</li>
+                  <li data-aos="zoom-in-right"> <span  style=" margin-right: 8px;">|</span>  Bridal Showers</li>
+                  <li data-aos="zoom-in-right"> <span  style=" margin-right: 8px;">|</span>  Rehearsal Dinners</li>
+                  <li data-aos="zoom-in-right"> <span  style=" margin-right: 8px;">|</span>  Bachelor Parties</li>
+                  <li data-aos="zoom-in-right"> <span  style=" margin-right: 8px;">|</span>  More!</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="our-service">
+            <div class="service-heading">
+              <h3 class="text-center underline my-5">Services We Provides</h3>
+            </div>
+            <!--image card layout start-->
+            <div class="serviceimg">
+    <div class="container">
+      <!--image row start-->
+      <div class="row gx-0">
+        <!--image card start-->
+        <div data-aos="fade-left" class="image">
+          <img src="img/1.jpg" alt="">
+          <div class="details">
+            <h2>Video <span>Walls</span></h2>
+            <p>LED Video Walls - Projector & Screen Rental - TV Displays - Live-streaming & Webcasting - Media Servers</p>
+            <div class="more">
+              <a href="#" class="read-more">Contact <span>Us</span></a>
+              <div class="icon-links">
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--image card end-->
+        <!--image card start-->
+        <div data-aos="fade-right" class="image">
+          <img src="img/2.jpg" alt="">
+          <div class="details">
+            <h2>Lighting</h2>
+            <p>Monograms/GOBOs - LED Uplights - Lighting Consoles - Intelligent Lighting - Pin Spots </p>
+            <div class="more">
+              <a href="#" class="read-more">Contact <span>Us</span></a>
+              <div class="icon-links">
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!--image card end-->
+        <div class="row gx-0">
+        <!--image card start-->
+        <div data-aos="fade-left" class="image">
+          <img src="img/3.jpg" alt="">
+          <div class="details">
+            <h2>Audio </h2>
+            <p>Microphones - Digital Audio Mixers - Speakers - DJ Gear - Audio Recordings - Radio Communication</p>
+            <div class="more">
+              <a href="#" class="read-more">Contact <span>Us</span></a>
+              <div class="icon-links">
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--image card end-->
+      <!--image row start-->
+      <!-- <div class="row"> -->
+        <!--image card start-->
+        <div data-aos="fade-right" class="image">
+          <img src="img/g1.jpg" alt="">
+          <div class="details">
+            <h2>Staging </h2>
+            <p>Custom Stage Decks - Mobile Staging -Truss Structures - Pipe & Drape -Podiums - Backdrops - Custom Signage</p>
+            <div class="more">
+              <a href="#" class="read-more">Contact <span>Us</span></a>
+              <div class="icon-links">
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!--image card end-->
+        <!--image card start-->
+        <div class="row gx-0">
+        <div data-aos="fade-left" class="image">
+          <img src="img/7.png" alt="">
+          <div class="details">
+            <h2>Special <span>Effects</span></h2>
+            <p>Fireworks - Confetti and Streamers - Flame Effects - Laser Light Shows - Sparkulars - Cryogenic Jets - Smoke Bombs 
+
+            </p>
+            <div class="more">
+              <a href="#" class="read-more">Contact <span>Us</span></a>
+              <div class="icon-links">
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--image card end-->
+        <!--image card start-->
+        <div data-aos="fade-right" class="image">
+          <img src="img/4.png" alt="">
+          <div class="details">
+            <h2>Decor<span></span></h2>
+            <p>Dance Floors - Glow Orbs - Pipe & Drape - Hedge Walls - Backdrops - Cafe Lighting - Soft Seating
+
+            </p>
+            <div class="more">
+              <a href="#" class="read-more">Contact <span>Us</span></a>
+              <div class="icon-links">
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--image card end-->
+      </div>
+      <!-- row end -->   
+      </div>
+    </div>
+      <!--image row end-->
+    </div>
+    <!--image card layout end-->
+          </div>
+        </div>
+      </section>
+</section>
+<!-- section2 end-->
+<!-- scroll to top -->
+<a href="#" class="to-top">
+  <i class="fas fa-chevron-up"></i>
+</a>
+
+                  <!-- feedback  -->
+                  <button type="button" class="btn btnOpen" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="img/mess.png"  alt=""></button>
+                  <!-- <div class="overlay"></div> -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                       <!-- <div class="close"><i class="fa-solid fa-xmark" style="color: #000000;"></i></div> -->
+                       <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                       </div>
+                       <div class="circle"><img src="img/logo.png" style="width: 57px;height: 55px;" alt="">
+                       </div>
+                       <form name="MyForm" id="form">
+                        <div class="mb-3">
+                          <label for="Username" class="form-label">Email:</label>
+                          <input type="email" class="form-control" id="email" name="email">
+                          <div class="error"></div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="Email"class="form-label">Event</label>
+                          <input type="text"  class="form-control" id="subject" name="subject">
+                          <div class="error"></div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="textarea"class="form-label">Let's plan your event</label>
+                          <textarea  class="form-control"  rows="4" id="textarea" name="Textarea"></textarea>
+                          <div class="error"></div>
+                        </div>
+                        <div class="text-center">
+                        <button type="submit" class="main-btn" value="Submit">Send</button></div>
+                        </form>
+                     </div>
+                     </div>
+                     </div>
+                   <!-- feedback end  -->
+<!-- footer start -->
+
+<footer>
+  <div class="container-fluid con-i">
+    <div class="row">
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box">
+          <img src="img/logo.png" style="width: 120px; margin-left: 10px; margin-bottom: 10px; margin-top: 10px;"  alt="">
+        <!-- <h3>Gala</h3> -->
+          <p class="" style="text-align: justify;">We love the creative solution. We live for unexpected design, unique experiences, and seamless production. Planning an event but no idea where to start? Take Gala!</p>
+          <h4 class="ms-3 mb-0" style="height: 40px;">Contact us</h4>
+          <div class="text">
+            <a href=""><i class="fa-solid fa-phone"></i></a>
+            <a href=""><i class="fa-solid fa-location-dot"></i></a>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+          </div>  
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box ms-lg-5 mt-4">
+          <h4>Link</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="#service">Service</a></li> 
+            <li><a href="about.html">About Us</a></li> 
+            <li><a href="wed.html">Event</a></li> 
+            <li><a href="gallery.html">Gallary</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box mt-4">
+          <h4>Events</h4>
+          <ul>
+            <li><a href="wed.html">Weddings Events</a></li> 
+            <li><a href="non.html">Non-profile Events</a></li> 
+            <li><a href="cor.html">Corporate Events</a></li>
+             <li><a href="soc.html">Social Events</a></li> 
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-box mt-4">
+          <h4>More info</h4>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Enter your email..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-right-long" style="color: white !important;"></i></span>
+          </div>
+          <h4>Follow us</h4>
+          <a href=""><i class="fa-brands fa-facebook" ></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter" ></i></a>
+          <a href=""><i class="fa-brands fa-linkedin" ></i></a>
+          <a href=""><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="col-12 text-center mt-5">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> ALL Right Reserved | Designed by Indra Kumari</p>
+      </div>
+    </div>
+  </div>
+</footer>
+          <!-- footer end here -->
+
+
+                <!-- script start -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> 
+    AOS.init({ 
+      offset: 200, 
+      duration: 800, 
+      delay: 150, 
+      easing: "linear", 
+      once: false,
+      });
+      // $(window).scroll(function(){ $('nav').toggleClass('scrolled', $(this).scrollTop()>50); }); 
+      </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <!-- script end -->
+  </body>
+</html>
